@@ -1,0 +1,95 @@
+{
+"musicItems" :
+[
+    {
+        "id" : 1,
+        "name" : "Guitar",
+        "imgUrl" : "/img/guitar.png"
+    },
+
+    {
+        "id" : 2,
+        "name" : "Piano",
+        "imgUrl" : "/img/piano.png"
+    },
+
+    {
+        "id" : 3,
+        "name" : "Drum set",
+        "imgUrl" : "/img/drum.png"
+    },
+
+    {
+        "id" : 4,
+        "name" : "Flute",
+        "imgUrl" : "/img/flute.png"
+    }
+],
+
+"sportItems" :
+[
+    {
+        "id" : 5,
+        "name" : "Cricket Bat",
+        "imgUrl" : "/img/bat.png"
+    },
+
+    {
+        "id" : 6,
+        "name" : "Football",
+        "imgUrl" : "/img/football.png"
+    },
+
+    {
+        "id" : 7,
+        "name" : "Batminton",
+        "imgUrl" : "/img/batminton.png"
+    },
+
+    {
+        "id" : 8,
+        "name" : "Balls",
+        "imgUrl" : "/img/balls.png"
+    },
+    {
+        "id" : 9,
+        "name" : "Shuttle",
+        "imgUrl" : "/img/shuttle.png"
+    }
+],
+
+"techItems" :
+[
+    {
+        "id" : 10,
+        "name" : "Laptop",
+        "imgUrl" : "/img/laptop.png"
+    },
+
+    {
+        "id" : 11,
+        "name" : "Apple Watch",
+        "imgUrl" : "/img/watch.png"
+    },
+
+    {
+        "id" : 12,
+        "name" : "Apple Ipad",
+        "imgUrl" : "/img/tablet.png"
+    },
+
+    {
+        "id" : 13,
+        "name" : "Boat Headphone",
+        "imgUrl" : "/img/headphone.png"
+    },
+
+    {
+        "id" : 14,
+        "name" : "Gaming Pad",
+        "imgUrl" : "/img/gaming.png"
+    }
+]
+
+}
+

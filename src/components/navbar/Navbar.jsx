@@ -1,7 +1,11 @@
 import React from 'react'
 import './navbar.css'
+import {Link} from 'react-router-dom'
+
+import { useInventoryCart } from '../../context/InventoryCartContext';
 
 function Navbar(props) {
+  const {getCartQuantity} = useInventoryCart()
   return (
     <div className='bg-dark '>
     <div class="container">
@@ -11,16 +15,19 @@ function Navbar(props) {
       </a>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/" className={"nav-link px-2 link-light " + props.homeactive}>Home</a></li>
-        <li><a href="/music" className={"nav-link px-2 link-light " + props.musicactive}>Music Inventory</a></li>
-        <li><a href="/sports" className={"nav-link px-2 link-light " + props.sportsactive}>Sports Inventory</a></li>
-        <li><a href="/tech" className={"nav-link px-2 link-light " + props.techactive}>Tech Inventory</a></li>
-        <li><a href="/contact-us" className={"nav-link px-2 link-light " + props.contactactive}>Contact Us</a></li>
+        <li><Link to="/" className={"nav-link px-2 link-light " + props.homeactive}>Home</Link></li>
+        <li><Link to="/music" className={"nav-link px-2 link-light " + props.musicactive}>Music Inventory</Link></li>
+        <li><Link to="/sports" className={"nav-link px-2 link-light " + props.sportsactive}>Sports Inventory</Link></li>
+        <li><Link to="/tech" className={"nav-link px-2 link-light " + props.techactive}>Tech Inventory</Link></li>
+        <li><Link to="/contact-us" className={"nav-link px-2 link-light " + props.contactactive}>Contact Us</Link></li>
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+       <Link to="/cart"> <button type="button" className="btn btn-outline-primary me-2 rounded-3"><i className='bi bi-cart pe-2'></i>Cart
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                {getCartQuantity()}
+              </span>
+       </button> </Link>
       </div>
     </header>
   </div>
